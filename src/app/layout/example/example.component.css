@@ -1,0 +1,28 @@
+#sample{
+
+}
+#sample a{
+    font-size: 158px;
+    display: inline-block;
+    color: #000;
+    line-height: 1;
+    
+    text-align: center;
+    transition: 0.3s;
+    animation: rotate infinite 3s linear;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#sample a:hover{
+    color: #fffb1cf9;
+}
+#sample p{
+    margin-top: 25px;
+    
+}

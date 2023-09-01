@@ -1,0 +1,33 @@
+ <section id="gallery" class="gallery section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2>Gallery</h2>
+        <p>This is an example of a gallery whose images are collected from internet sources, from pexels.com</p>
+      </div>
+
+      <div class="row gallery-container" >
+         
+        <mat-grid-list [cols]="jmCol" rowHeight="180px" >
+            <mat-grid-tile
+                *ngFor="let tile of tiles"
+                [colspan]="tile.cols"
+                [rowspan]="tile.rows">
+             
+                
+                <div class="gallery-item filter-app">
+                    <div class="gallery-wrap">
+                      <img [src]="tile.text" class="img-thumbnail" alt="">
+                    </div>
+                  </div>
+
+
+            </mat-grid-tile>
+          </mat-grid-list>
+        
+
+      
+
+      </div>
+
+    </div>
+  </section>

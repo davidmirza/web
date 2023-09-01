@@ -1,0 +1,56 @@
+.rotate {
+  
+}
+.rotate:hover{
+    animation: rotate infinite 3s linear;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: #000;
+    overflow-y: auto;
+  }
+  
+  #header .profile img {
+    margin: 15px auto;
+    display: block;
+    width: 170px;
+    border: 5px solid #fffb1cf9;
+  }
+ 
+  li > a.active {
+     color: #fffb1cf9;
+     font-style: italic; 
+    }
+  #header .profile h1 {
+    font-size: 29px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #header .profile h1 a,
+  #header .profile h1 a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  

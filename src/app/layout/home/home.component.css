@@ -1,0 +1,50 @@
+#home {
+    width: 100%;
+    height: 100vh;
+    background: url("https://ik.imagekit.io/DvZrm91/P1012493-01.jpeg") top center;
+    background-size: cover;
+  }
+  
+  #home:before {
+    content: "";
+    background: rgba(12, 27, 48, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  #home .home-container {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+  }
+  
+  #home h1 {
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fffb1cf9;
+  }
+   #home h2 {
+    font-size: 30px;
+    color: #fffb1cf9;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+   }
+  #home p {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  #home p span {
+    color: #fff;
+    padding-bottom: 7px;
+    letter-spacing: 1px;
+  }
+  
