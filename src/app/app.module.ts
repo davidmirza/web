@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ContactComponent } from './layout/contact/contact.component';
 import { ExampleComponent } from './layout/example/example.component';
+import { NotfoundComponent } from './layout/notfound/notfound.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ExampleComponent } from './layout/example/example.component';
     FooterComponent,
     GalleryComponent,
     ContactComponent,
-    ExampleComponent
+    ExampleComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,

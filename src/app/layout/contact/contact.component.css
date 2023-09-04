@@ -1,24 +1,67 @@
-#contact{
-
-}
-#contact a{
-    font-size: 98px;
-    display: inline-block;
-    background: #000;
+.contact {
+    padding-bottom: 130px;
+  }
+  
+  .contact .info {
+    padding: 30px;
+    background: #fff;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  }
+  .contact .info i {
+    font-size: 35px;
     color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: #393838;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    text-align: center;
-    width: 126px;
-    height: 126px;
-    transition: 0.3s;
-}
-#contact a:hover{
-    color: #fffb1cf9;
-}
-#contact p{
-    margin-top: 25px;
+    transition: all 0.3s ease-in-out;
+  }
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #050d18;
+  }
+  .contact .container .github i:hover{
+    color:#242424;
+    background: #c6c6c6;
+  }
+  .contact .container .wa i:hover{
+    color:#00c010;
+    background: #c6c6c6;
+  }
+  .contact .container .ig i:hover{
+    color:#f30f85;
+    background: #c6c6c6;
+  }
+  .contact .container .mail i:hover{
+    color:#0b64d2;
+    background: #c6c6c6;
+  }
+  .contact .info p {
+    padding: 0 0 2px 60px;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 18px;
+    color: #393838;
+  }
+  .contact .info label{
+    margin-bottom: 5px;
+
+  }
+  .contact .info input,textarea{
+    margin-bottom: 8px;
+  }
+  .contact button{
+    color: #fff;
+  }
+  
+  
+  
     
-}

@@ -11,6 +11,10 @@
   }
   #footer a{
     font-size: 20px;
+    color:#fff;
+  }
+  #footer a:hover{
+    color:#fffb1cf9;
   }
   #footer .copyright {
     text-align: center;
