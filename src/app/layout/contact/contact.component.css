@@ -1,7 +1,10 @@
 .contact {
-    padding-bottom: 130px;
+    width: auto;
+    background-color: #fff;
   }
-  
+  .contact .top{
+    margin-bottom: 25px;
+  }
   .contact .info {
     padding: 30px;
     background: #fff;

@@ -37,7 +37,7 @@
   .gallery .gallery-wrap {
     transition: 0.3s;
     position: relative;
-    overflow: hidden;
+
     z-index: 1;
   }
   .gallery .container .header h2 {

@@ -1,5 +1,8 @@
-  
-  #main {
-    margin-left: 300px;
+@media (max-width: 1199px) {
+  #footer {
+    left: -300px;
+    position: static;
+    width: auto;
+    padding-right: 20px 15px;
   }
-  
+}

@@ -1,3 +1,4 @@
+
 #footer {
     padding: 15px;
     color: #f4f6fd;
@@ -49,15 +50,6 @@
   @media (max-width: 1199px) {
     #footer {
       left: -300px;
-    }
-  
-    #main {
-      margin-left: 0;
-    }
-  
-    .container,
-    .container-fluid {
-      padding-left: 12px;
-      padding-right: 12px;
+       
     }
   }
