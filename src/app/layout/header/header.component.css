@@ -23,7 +23,7 @@
     transition: all 0.5s;
     padding: 0 15px;
     background: #000;
-    overflow-y: auto;
+   
   }
   
   #header .profile img {
@@ -72,7 +72,13 @@
   .nav-menu {
     padding: 30px 0 0 0;
   }
+  .navbar li .submenu{ 
   
+    margin: 0; 
+    padding: 0; 
+    padding-left: 1rem; 
+    padding-right: 1rem;
+  }
   .nav-menu * {
     margin: 0;
     padding: 0;
@@ -140,10 +146,43 @@
   }
   
   .mobile-nav-active {
-    overflow: hidden;
+    
   }
   
   .mobile-nav-active #header {
     left: 0;
   }
+
+  @media all and (min-width: 992px) {
+
+    .sidebar li{ position: relative; }
+    .sidebar li .submenu{ 
+      
+      position: absolute;
+      left:150px; top:-120px;
+      min-width: 240px;
+      background-color: #6f7180;
+      color: #fff;
+    }
+    .sidebar li:hover > .submenu{ 
+      display: block; 
+     
+    }
+    .sidebar li:hover .submenu a{
+      color:#fff ;
+      text-decoration: none;
+    }
+    .sidebar li:hover .submenu a:hover{
+      color:#fffb1cf9;
+      font-style: italic;
+    }
+  }	
+   
+  @media (max-width: 992px) {
   
+    .sidebar .submenu, .sidebar .dropdown-menu{
+      position: static!important;
+      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+    }
+  
+  }

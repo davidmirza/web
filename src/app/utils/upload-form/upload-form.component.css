@@ -1,0 +1,16 @@
+:host ::ng-deep .p-fileupload .p-fileupload-content {
+    background: #fff !important;
+    position: inherit;
+    
+}
+:host ::ng-deep .p-fileupload-content 
+    .p-fileupload-row.ng-star-inserted img {
+    width: auto;
+    height: 400px;
+}
+
+:host ::ng-deep .p-fileupload .p-fileupload-buttonbar {
+    display: grid;
+    justify-content: left;
+    margin: 15px;
+}

@@ -9,11 +9,14 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
 import { FooterComponent } from './layout/footer/footer.component';
 import { GalleryComponent } from './layout/gallery/gallery.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatGridListModule} from '@angular/material/grid-list';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { ContactComponent } from './layout/contact/contact.component';
 import { ExampleComponent } from './layout/example/example.component';
 import { NotfoundComponent } from './layout/notfound/notfound.component';
-
+import { AdminComponent } from './layout/example-modul/admin/admin.component';
+import { FormComponent } from './layout/example-modul/form/form.component';
+import { UploadFormComponent } from './utils/upload-form/upload-form.component';
+import { FileUploadModule } from 'primeng/fileupload';
 
 @NgModule({
   declarations: [
@@ -24,14 +27,17 @@ import { NotfoundComponent } from './layout/notfound/notfound.component';
     GalleryComponent,
     ContactComponent,
     ExampleComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    AdminComponent,
+    FormComponent,
+    UploadFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgxTypedJsModule,
     BrowserAnimationsModule,
-    MatGridListModule
+    MatGridListModule,FileUploadModule
   ],
   providers: [],
   bootstrap: [AppComponent]
