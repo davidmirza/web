@@ -161,7 +161,7 @@
     symbol-observable "4.0.0"
     yargs "17.7.2"
 
-"@angular/common@^16.0.0 || ^17.0.0", "@angular/common@^16.2.0", "@angular/common@>=11.0.0", "@angular/common@16.2.3":
+"@angular/common@^16.0.0 || ^17.0.0", "@angular/common@^16.2.0", "@angular/common@>=11.0.0", "@angular/common@>=9.0.7", "@angular/common@16.2.3":
   version "16.2.3"
   resolved "https://registry.npmjs.org/@angular/common/-/common-16.2.3.tgz"
   integrity sha512-hOC2yqISBRAzltuVJQ3CEJxHRp9mWggysp0or5HydbcmvB6WIroECL7U0u36VA95zC9SXnymHA13OwiFPpmahA==
@@ -189,7 +189,7 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/core@^16.0.0 || ^17.0.0", "@angular/core@^16.2.0", "@angular/core@>=11.0.0", "@angular/core@16.2.3":
+"@angular/core@^16.0.0 || ^17.0.0", "@angular/core@^16.2.0", "@angular/core@>=11.0.0", "@angular/core@>=9.0.7", "@angular/core@16.2.3":
   version "16.2.3"
   resolved "https://registry.npmjs.org/@angular/core/-/core-16.2.3.tgz"
   integrity sha512-YCzm7Rd2l0Ti0dZ1Mw3OfoQqlLolDN6jBEPy9Ah1s/KB+jKwNK9An3g8A9H6/jQIFwHCtxRad3LYH5ftknNMBQ==
@@ -264,7 +264,7 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/platform-browser@^16.0.0 || ^17.0.0", "@angular/platform-browser@^16.2.0", "@angular/platform-browser@16.2.3":
+"@angular/platform-browser@^16.0.0 || ^17.0.0", "@angular/platform-browser@^16.2.0", "@angular/platform-browser@>=9.0.7", "@angular/platform-browser@16.2.3":
   version "16.2.3"
   resolved "https://registry.npmjs.org/@angular/platform-browser/-/platform-browser-16.2.3.tgz"
   integrity sha512-adWINGgjIMxwbWJhkMwpEfb4FRFMda5X6ahxWQX2E03Nl0kzePI6cvlJqAgp+iBwTkieWeU8BThJk2/rMkS3bw==
@@ -6412,6 +6412,13 @@ safe-buffer@5.1.2:
   resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
 
+safe-pipe@^2.0.5-0:
+  version "2.0.5-0"
+  resolved "https://registry.npmjs.org/safe-pipe/-/safe-pipe-2.0.5-0.tgz"
+  integrity sha512-Z+F6DdTLaf9xO8OpdQ/Gpa0YX+Xg70jxsLDGSsk0FP+70/LNP4ezFmWCwaOqOXRRRmUCECqmu0fykJvPmTSe7w==
+  dependencies:
+    tslib "^2.0.0"
+
 "safer-buffer@>= 2.1.2 < 3", "safer-buffer@>= 2.1.2 < 3.0.0":
   version "2.1.2"
   resolved "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz"
@@ -7098,7 +7105,7 @@ trim-repeated@^1.0.0:
   dependencies:
     escape-string-regexp "^1.0.2"
 
-tslib@^2.0.3, tslib@^2.1.0, tslib@^2.3.0:
+tslib@^2.0.0, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.3.0:
   version "2.6.2"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.6.2.tgz"
   integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==

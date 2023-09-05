@@ -1,14 +1,62 @@
 <section id="form" class="form section-bg ">
     <div class="container">
-      <div class="section-title">
+      <div class="section">
         <h2>Sample Form</h2>
-        <!-- <p>You can message me via WhatsApp or email and you can see my GitHub via the link below</p> -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><i class="bx bx-home"></i>Home</li>
+              <li class="breadcrumb-item">Sample Page</li>
+              <li class="breadcrumb-item">Form</li>
+            </ol>
+        </nav>
       </div>
 
       <div class="row form-container justify-content-center align-items-center">
-  
-       <div class="row">
-      
+  <div class="row">
+    <div class="col-lg-12"> <div class="info">
+        <mat-stepper #stepper>
+            <mat-step [stepControl]="firstFormGroup" errorMessage="Name is required.">
+              <form [formGroup]="firstFormGroup">
+                <ng-template matStepLabel>Fill out your name</ng-template>
+                <mat-form-field>
+                  <mat-label>Name</mat-label>
+                  <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+                </mat-form-field>
+                <div>
+                  <p>Go to a different step to see the error state</p>
+                  <button mat-button matStepperNext class="btn btn-warning">Next</button>
+                </div>
+              </form>
+            </mat-step>
+            <mat-step [stepControl]="secondFormGroup" errorMessage="Address is required.">
+              <form [formGroup]="secondFormGroup">
+                <ng-template matStepLabel>Fill out your address</ng-template>
+                <mat-form-field>
+                  <mat-label>Address</mat-label>
+                  <input matInput placeholder="Middle Java, Indonesia" formControlName="secondCtrl"
+                         required>
+                </mat-form-field>
+                <div>
+                  <p>Go to a different step to see the error state</p>
+                  <button mat-button matStepperPrevious class="btn btn-danger">Back</button>
+                  <button mat-button matStepperNext class="btn btn-warning">Next</button>
+                </div>
+              </form>
+            </mat-step>
+            <mat-step>
+              <ng-template matStepLabel>Done</ng-template>
+              <p>You are now done.</p>
+              <div>
+                <button mat-button matStepperPrevious class="btn btn-danger">Back</button>
+                <button mat-button (click)="stepper.reset()" class="btn btn-success"  >Reset</button>
+              </div>
+            </mat-step>
+          </mat-stepper>
+          
+    </div>
+    </div>
+  </div>
+       <div class="row m-top-15">
         <div class="col-lg-6 ">
             <div class="info"> <div class="title"><h2>Sample Form Master Data </h2></div>
                 <form action="#">

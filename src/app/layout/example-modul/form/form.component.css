@@ -26,3 +26,19 @@
     bottom: 0;
     left: 0;
   }
+  #form .section{
+    margin-top: -45px;
+  }
+  #form .section h2::after {
+    content: "";
+    position: static;
+    display: block;
+    width: 100px;
+    height:3px;
+    background: #fffb1cf9;
+    bottom: 0;
+    left: 0;
+  }
+  .mat-mdc-form-field {
+    margin-top: 16px;
+  }

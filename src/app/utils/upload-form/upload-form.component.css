@@ -13,4 +13,17 @@
     display: grid;
     justify-content: left;
     margin: 15px;
+    
+}
+:host ::ng-deep .p-fileupload .p-button-label{
+    margin-left: 5px;
+}
+.btremove {
+    padding: 15px;
+}
+#upload img{
+    margin: 10px;
+    border: 2px;
+    width: 400px;
+    height: auto;
 }

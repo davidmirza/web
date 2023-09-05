@@ -17,6 +17,15 @@ import { AdminComponent } from './layout/example-modul/admin/admin.component';
 import { FormComponent } from './layout/example-modul/form/form.component';
 import { UploadFormComponent } from './utils/upload-form/upload-form.component';
 import { FileUploadModule } from 'primeng/fileupload';
+import { ButtonModule } from 'primeng/button';
+import {BreadcrumbModule} from 'primeng/breadcrumb';
+import {MenuItem} from 'primeng/api';
+import {FormBuilder, Validators, FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatStepperModule} from '@angular/material/stepper';
 
 @NgModule({
   declarations: [
@@ -37,7 +46,12 @@ import { FileUploadModule } from 'primeng/fileupload';
     AppRoutingModule,
     NgxTypedJsModule,
     BrowserAnimationsModule,
-    MatGridListModule,FileUploadModule
+    MatGridListModule,FileUploadModule,ButtonModule,BreadcrumbModule,MatStepperModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
