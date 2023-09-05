@@ -1,14 +1,9 @@
 import { Component,OnInit } from '@angular/core';
-import { UploadFormComponent } from 'src/app/utils/upload-form/upload-form.component';
-import {BreadcrumbModule} from 'primeng/breadcrumb';
+ 
 import {MenuItem} from 'primeng/api';
-import {StepsModule} from 'primeng/steps';
+ 
 import {FormBuilder, Validators, FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
-import {MatButtonModule} from '@angular/material/button';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatStepperModule} from '@angular/material/stepper';
+
 
 @Component({
   selector: 'app-form',
@@ -33,5 +28,12 @@ export class FormComponent implements OnInit{
       {label: 'Step 2'},
       {label: 'Step 3'}
   ];
+  }
+  formatLabel(value: number): string {
+    if (value >= 1000) {
+      return Math.round(value / 1000) + 'k';
+    }
+
+    return `${value}`;
   }
 }

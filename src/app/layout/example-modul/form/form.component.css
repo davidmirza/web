@@ -42,3 +42,6 @@
   .mat-mdc-form-field {
     margin-top: 16px;
   }
+  mat-slider {
+    width: 99%;
+  }
