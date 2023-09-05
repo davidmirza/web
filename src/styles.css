@@ -22,6 +22,9 @@ section {
 .m-top-15{
   margin-top: 15px;
 }
+.m-bt-15{
+  margin-bottom: 15px;
+}
 .section-title h2 {
   font-size: 45px;
   font-weight: bold;

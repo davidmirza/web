@@ -3,7 +3,7 @@
         <ng-template let-file pTemplate='file'>
             <div class="text-center">
             <img [src]="urlImage" class="img-fluid " /> </div>
-            <div class="btremove"><button class="btn btn-success" pButton type="button" label="Upload" ><i class="bx bx-upload"></i>
+            <div class="btremove"><button class="btn btn-success" pButton type="button" label="Upload" (click)="upload()" ><i class="bx bx-upload"></i>
             </button></div>
         </ng-template>
     </p-fileUpload>

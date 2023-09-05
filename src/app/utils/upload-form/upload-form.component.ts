@@ -2,7 +2,7 @@ import { Component,OnInit,ViewChild,Input,Pipe,PipeTransform } from '@angular/co
 import { DomSanitizer,SafeResourceUrl } from '@angular/platform-browser';
 import { FileUploadModule } from 'primeng/fileupload';
 import { MessageService } from 'primeng/api';
- 
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-upload-form',
@@ -33,8 +33,15 @@ export class UploadFormComponent implements OnInit{
   tmp2 = tmp2.replace("(see https://g.co/ng/security#xss)","");
   tmp2 = tmp2.replace(" ",'');
   this.urlImage=this.sanitizer.bypassSecurityTrustResourceUrl(tmp2);
- 
   
+ }
+ upload(){
+  Swal.fire({
+    title:   '',
+    text: 'Upload Success',
+    icon: 'success',
+    confirmButtonText: 'OK'
+  })
  }
  
 }

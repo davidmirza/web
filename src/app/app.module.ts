@@ -27,6 +27,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatSliderModule} from '@angular/material/slider';
+import {MatNativeDateModule} from '@angular/material/core';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 @NgModule({
   declarations: [
@@ -47,13 +49,19 @@ import {MatSliderModule} from '@angular/material/slider';
     AppRoutingModule,
     NgxTypedJsModule,
     BrowserAnimationsModule,
-    MatGridListModule,FileUploadModule,ButtonModule,BreadcrumbModule,MatStepperModule,
+    MatGridListModule,
+    FileUploadModule,
+    ButtonModule,
+    BreadcrumbModule,
+    MatStepperModule,
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
     MatSliderModule,
+    MatNativeDateModule,
+    MatDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

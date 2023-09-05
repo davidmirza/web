@@ -3,14 +3,19 @@
 }
 .rotate:hover{
     animation: rotate infinite 3s linear;
+   
 }
 @keyframes rotate {
-    from{
+    0%{
         transform: rotate(0deg);
     }
-    to{
-        transform: rotate(360deg);
+    25%{
+        transform: rotate(-5deg);
     }
+    75%{
+      transform: rotate(5deg);
+    }
+
 }
 #header {
     position: fixed;
@@ -30,9 +35,11 @@
     margin: 15px auto;
     display: block;
     width: 170px;
-    border: 5px solid #fffb1cf9;
+    border: 5px solid #757575f9;
   }
- 
+  #header .profile img:hover{
+    border: 3px solid #fffb1cf9;
+  }
   li > a.active {
      color: #fffb1cf9;
      font-style: italic; 
