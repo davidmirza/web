@@ -32,6 +32,9 @@ MIT
 @angular/core
 MIT
 
+@angular/forms
+MIT
+
 @angular/material
 MIT
 The MIT License
@@ -139,6 +142,9 @@ SOFTWARE.
 
 
 ngx-typed-js
+MIT
+
+primeng
 MIT
 
 rxjs
