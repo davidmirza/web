@@ -1,0 +1,37 @@
+<ng-template #modal let-modal>
+<div bsModal #ClaimModal="bs-modal"  class="modal fade" tabindex="-1" role="dialog"
+     aria-hidden="true" [config]="{backdrop: 'static'}" id="m_scrollable_modal_1">
+     <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    <span >Sample Modal</span>
+                </h4>
+                <button type="button" class="close" >
+                    <span aria-hidden="true">&times;</span>
+                </button> 
+            </div>
+            <div class="modal-body">
+                <div class="form-group col-12">
+                    <div class="form-group">
+                        <label for="Name">Name </label>
+                        <input class="form-control" type="text" name="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="Name">Address </label>
+                        <input class="form-control" type="number" name="Name" >
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button   type="button" class="btn btn-default"
+                    (click)="close()">Cancel</button>
+
+                <button type="button" class="btn btn-primary" (click)="close()" ><i class="fa fa-save"></i>
+                    <span>Save</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+</ng-template>

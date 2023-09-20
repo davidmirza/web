@@ -29,6 +29,12 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { ModalInputComponent } from './layout/modal/modal-input/modal-input.component';
+import { AppBsModalModule } from './utils/appBsModal/app-bs-modal.module';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { ModalDirective } from 'ngx-bootstrap/modal';
+ 
 
 @NgModule({
   declarations: [
@@ -42,9 +48,11 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     NotfoundComponent,
     AdminComponent,
     FormComponent,
-    UploadFormComponent
+    UploadFormComponent,
+    ModalInputComponent
   ],
   imports: [
+    ModalModule,
     BrowserModule,
     AppRoutingModule,
     NgxTypedJsModule,
@@ -61,7 +69,10 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatButtonModule,
     MatSliderModule,
     MatNativeDateModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    BsDatepickerModule.forRoot()
+   // AppBsModalModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

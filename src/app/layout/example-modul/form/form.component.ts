@@ -1,8 +1,9 @@
-import { Component,OnInit, Injector } from '@angular/core';
+import { Component,OnInit, Injector,ViewChild } from '@angular/core';
 import { baseComponent } from 'src/utils/base-component';
 import {MenuItem} from 'primeng/api';
 import Swal from 'sweetalert2'; 
 import {FormBuilder, Validators, FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { ModalInputComponent } from '../../modal/modal-input/modal-input.component';
 
 @Component({
   selector: 'app-form',
@@ -14,7 +15,8 @@ export class FormComponent extends baseComponent implements OnInit{
   
   constructor(
     injector: Injector,
-    private _formBuilder: FormBuilder
+    private _formBuilder: FormBuilder,
+   
     ) {
       super(injector);
     }
@@ -63,5 +65,17 @@ export class FormComponent extends baseComponent implements OnInit{
       this.showAlert("Upload Success",false);
     }
   }
-
+  showModal(){
+    console.log("request show");
+    const shModal = document.getElementById("modal");
+    if(shModal!=null){
+      shModal.style.display='block';
+    }
+  }
+  close(){
+    const shModal = document.getElementById("modal");
+    if(shModal!=null){
+      shModal.style.display='none';
+    }
+  }
 }

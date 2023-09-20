@@ -47,4 +47,16 @@
   }
   .datepicker{
     width: 100%;
+    background-color: #fff;
+    color: #fff;
   }
+  .bg-white{
+    background-color: #fff;
+  }
+  :host ::ng-deep .mat-form-field .datepicker  {
+    background-color: #fff;
+    color: #fff;
+}
+.m-l-15{
+  margin-left: 15px;
+}

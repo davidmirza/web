@@ -63,16 +63,16 @@
                     <div class="row">
                     <div class="form-group col-md-6">
                         <label for="name">First Name</label>
-                        <input type="text" name="name" class="form-control" id="firstname" required>
+                        <input type="text" name="name" class="form-control" id="firstname"  placeholder="Firstname" required>
                     </div>
                     <div class="form-group col-md-6">
                         <label for="name">Last Name</label>
-                        <input type="text" class="form-control" name="lastname" id="lastname" required>
+                        <input type="text" class="form-control" name="lastname" id="lastname"  placeholder="Lastname" required>
                     </div>
                     </div>
                     <div class="form-group">
                     <label for="name">Email</label>
-                    <input type="text" class="form-control" (change)="onEmail($event)">
+                    <input type="text" class="form-control" (change)="onEmail($event)"  placeholder="Email Address">
                     </div>
                     
                     <div class="form-group">
@@ -91,11 +91,11 @@
                             <input matSliderThumb>
                           </mat-slider>
                     </div>
-                    <div class="input-group">
-                        <mat-form-field class="datepicker">
-                            <mat-label>Enter a date range</mat-label>
+                    <div class="input-group datepicker ">
+                        <mat-form-field class="datepicker bg-white">
+                            <mat-label >Enter a date range</mat-label>
                             <mat-date-range-input [rangePicker]="picker">
-                              <input matStartDate placeholder="Start date">
+                              <input matStartDate placeholder="Start date"  >
                               <input matEndDate placeholder="End date">
                             </mat-date-range-input>
                             <!-- <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint> -->
@@ -105,11 +105,20 @@
                     
                     </div>
                     <div class="form-group">
+                        <label>Select Date</label>
+                        <input
+                        type="text"
+                        placeholder="Select Date"
+                        class="form-control"
+                        bsDatepicker 
+                        [bsConfig]="{ isAnimated: true, containerClass:'theme-default' }">
+                    </div>
+                    <div class="form-group">
                     <label for="name">Remark</label>
                     <textarea class="form-control" name="remark" rows="5" required></textarea>
                     </div>
                 
-                    <div><button type="submit" class="btn btn-success submit" (click)="alert(true)"><i class='bx bx-save' ></i> Save</button></div>
+                    <div><button type="submit" class="btn btn-success submit" (click)="alert(true)"><i class='bx bx-save' ></i> Save</button> <button class="btn btn-success submit m-l-15" (click)="showModal()"><i class='bx bx-window-open'></i> Open Modal</button></div>
                 </form>
             </div>
         </div>
@@ -125,4 +134,34 @@
       </div>
       
     </div>
+
   </section>
+  <div class="modal" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-dismiss="modal" (click)="close()" aria-label="Close">
+            <span aria-hidden="true"> </span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group col-12">
+            <div class="form-group">
+                <label for="Name">Name </label>
+                <input class="form-control" type="text" name="Name">
+            </div>
+            <div class="form-group">
+                <label for="Name">Address </label>
+                <input class="form-control" type="text" name="address" >
+            </div>
+            
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="close()">Close</button>
+          <button type="button" class="btn btn-primary" (click)="close()">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
