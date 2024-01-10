@@ -41,7 +41,7 @@ var typed = new Typed('#typed', {
 let section = document.querySelectorAll('section');
 window.onscroll = () => {
   section.forEach(sc => {
-    let top = window.scrollY +10;
+    let top = window.scrollY +150;
     let offset = sc.offsetTop - 15;
     let height = sc.offsetHeight +150;
     if(top >=offset && top < offset+height){
