@@ -25,3 +25,16 @@ const observer  = new IntersectionObserver((entries) =>{
 })
 const hiddenElement = document.querySelectorAll('.hidden');
 hiddenElement.forEach((el) => observer.observe(el));
+let delayed = false;
+function openMenu() {
+const icon = document.querySelector(".togle-menu");  
+const menu = document.querySelector(".nav-menu-mobile"); 
+menu.classList.toggle("open");
+icon.classList.toggle("open");
+console.log("test")
+delayed=!delayed;
+setTimeout(() => {
+  menu.classList.toggle("delay");
+  console.log("1 sec")
+}, (delayed)?100:10);
+}
