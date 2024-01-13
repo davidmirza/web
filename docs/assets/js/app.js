@@ -54,7 +54,7 @@ window.onscroll = () => {
 }
 
 const hiddenElement = document.querySelectorAll('.hidden');
-hiddenElement.forEach((el) => observer.observe(el));
+//hiddenElement.forEach((el) => observer.observe(el));
 
 
 function getScroll(){
