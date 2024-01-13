@@ -517,7 +517,9 @@
       display: none;
     }
     body{
-      background-image: url("/assets/img/mbl/paper.jpg");
+      background-image: url("https://raw.githubusercontent.com/davidmirza/web/gh-pages/docs/assets/img/mbl/paper.jpg");
+      background-position: center;
+      background-size: cover;
     }
     #main-mb {
       display: flex;
@@ -584,7 +586,6 @@
       height: 100vh;
       width: 100vw;
       margin: 0;
-      background-image: url("https://raw.githubusercontent.com/davidmirza/web/gh-pages/docs/assets/img/mbl/paper.jpg");
       font-family: 'Special Elite', system-ui;
     }
 
