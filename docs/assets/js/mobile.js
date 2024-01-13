@@ -95,7 +95,7 @@ let data = [
   {
     section: "David Mirza",
     title: "Software Developer",
-    image: "/assets/img/ppf.png",
+    image: "assets/img/ppf.png",
     content:
       "Stand alone for coding, Experience in developing applications, for web based, mobile based, or desktop based",
   },
@@ -173,8 +173,8 @@ let data = [
   {
     section: "Contact Me",
     title: "Mirza David",
-    image: "/assets/img/ppf.png",
-    content: "<div id='contact'><div class='itemContact'><img src='/assets/img/icons8-gmail.svg' /><span>davemirza9@gmail.com</span></div><div class='itemContact'><img src='/assets/img/icons8-whatsapp.svg' /><span>+62 85 640 111 632</span></div><div class='itemContact'><img src='/assets/img/icons8-github.svg' /><span>github.com/davidmirza</span></div><div class='itemContact'><img src='/assets/img/icons8-linkedin.svg' /><span>www.linkedin.com/in/david-mirza/</span></div><div class='itemContact'><span>Thank You</span></div></div>",
+    image: "assets/img/ppf.png",
+    content: "<div id='contact'><div class='itemContact'><img src='assets/img/icons8-gmail.svg' /><span>davemirza9@gmail.com</span></div><div class='itemContact'><img src='assets/img/icons8-whatsapp.svg' /><span>+62 85 640 111 632</span></div><div class='itemContact'><img src='assets/img/icons8-github.svg' /><span>github.com/davidmirza</span></div><div class='itemContact'><img src='assets/img/icons8-linkedin.svg' /><span>www.linkedin.com/in/david-mirza/</span></div><div class='itemContact'><span>Thank You</span></div></div>",
   },
   {
     section: "",
