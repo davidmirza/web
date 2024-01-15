@@ -7,7 +7,6 @@ var isFirst= true;
 window.addEventListener(
   "load",
   function () {
-    console.log("init mobile");
     firstLoad();
     var main = this.document.getElementById("def");
     var p = 0;
@@ -30,7 +29,7 @@ window.addEventListener(
         var to = e.changedTouches[0];
         dis = parseInt(to.clientX - p);
         var di = dis / 10;
-        console.log('move',dis, di);
+      
        if(di<1 && di < -50){
         di=-45;
        }
@@ -38,12 +37,15 @@ window.addEventListener(
         di = 45
        }
        document.getElementById('img-logo').style.transition = "400ms ease";
+        
         if(di<0){
-            document.getElementById('body-content').style.borderBottomRightRadius = "5vw";
+          var s = Math.abs(di)+"vw";
+            document.getElementById('body-content').style.borderBottomRightRadius = s;
         }else if(di> 10){
-            document.getElementById('body-content').style.borderBottomLeftRadius = "5vw";
+          var s = di+"vw";
+            document.getElementById('body-content').style.borderBottomLeftRadius = s;
         }
-       console.log('swipe ',di)
+    
         document.getElementById('img-logo').style.transform = "translateX("+di+"vw)";
       
         document.getElementById('img-logo').style.scale = "1."+Math.abs(di);
@@ -58,13 +60,14 @@ window.addEventListener(
       function (e) {
         isOn = false;
         var c = dis > 90 ? false : dis < -90 ? true : "";
-        console.log("ss ", c, dis);
         c === "" ? "" : setData(c);
+        document.getElementById('main-mb').style.transition = "all 500m ease";
         document.getElementById('body-content').style.borderBottomLeftRadius = "0vw";
         document.getElementById('body-content').style.borderBottomRightRadius = "0vw";
         document.getElementById('img-logo').style.scale = "1";
         document.getElementById('img-logo').style.transition = "100ms ease-in";
         document.getElementById('img-logo').style.transform = "translateX(0vw)";
+        document.getElementById('body-content').style.opacity = 1;
         e.preventDefault();
       },
       false
@@ -73,7 +76,6 @@ window.addEventListener(
   false
 );
 
-// document.getElementById('img-logo')
 function setData(n) {
   console.log("d", n, idx);
    idx = n
@@ -208,10 +210,8 @@ let data = [
   },
 ];
 function firstLoad (){
-    console.log('init',isFirst);
     if(isFirst){
         setData(true);
-      
     }
 }
  
